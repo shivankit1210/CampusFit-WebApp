@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #0d1282;
+
+  .right {
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        width: 100px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
