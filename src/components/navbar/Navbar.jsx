@@ -1,25 +1,27 @@
-import React from 'react'
-import "./navbar.css"
+import React from "react";
+import itg from "../../images/itg.jpg";
+import "./navbar.css";
 
 function Navbar() {
   return (
     <div className="navbar">
-        <div className="left">
-            <h2>CampusFit</h2>
-
-        </div>
-        <div className="right">
+      <div className="left">
+        <h2>CampusFit</h2>
+      </div>
+      <div className="center">
         <ul>
-            <li>Home</li>
-            <li>Guide</li>
-            <li>Memborship</li>
-            <li>Tour</li>
-            <li>Euipments</li>
+          <li>HOME</li>
+          <li>GUIDE</li>
+          <li>MEMBERSHIP</li>
+          <li>TOUR</li>
+          <li>EQUIPMENTS</li>
         </ul>
-        </div>
-       
+      </div>
+      <div className="right">
+        <img src={itg} alt="" />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
