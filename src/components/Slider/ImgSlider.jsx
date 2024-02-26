@@ -12,7 +12,7 @@
 // export default ImgSlider;
 
 import React, { useState } from "react";
-import "./ImageSlider.css"; // Import CSS for styling
+import "./ImgSlider.css"; 
 
 const ImgSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
