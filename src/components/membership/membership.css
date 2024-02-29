@@ -1,11 +1,39 @@
-.membership{
-    background-color:#0d1282 ;
+.membership {
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-    .left{
-        display: flex;
-    }
+  .left {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgb(0, 5, 5);
+    background-color: #0d1282;
+    width: 40vw;
+    padding: 2px;
+    margin-left: 100px;
+    margin-top: 5px;
 
-    .right{
-        display: flex;
+    p {
+      padding: 8px;
+      font-size: large;
+      text-align: justify;
     }
+  }
+
+  .right {
+    display: flex;
+    /* border: 2px solid rgb(1, 1, 1); */
+    margin-right: 10px;
+    margin-top: 5px;
+
+    .img {
+      height: 60vh;
+    }
+  }
 }
