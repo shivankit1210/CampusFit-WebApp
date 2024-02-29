@@ -1,0 +1,11 @@
+.membership{
+    background-color:#0d1282 ;
+
+    .left{
+        display: flex;
+    }
+
+    .right{
+        display: flex;
+    }
+}

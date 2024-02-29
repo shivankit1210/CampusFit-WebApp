@@ -11,10 +11,10 @@ function Navbar() {
       <div className="center">
         <ul>
           <li>HOME</li>
-          <li>GUIDE</li>
           <li>MEMBERSHIP</li>
-          <li>TOUR</li>
+          <li>ENQUIRE</li>
           <li>EQUIPMENTS</li>
+          <li>EXERCISES</li>
         </ul>
       </div>
       <div className="right">

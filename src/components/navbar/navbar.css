@@ -6,19 +6,27 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #0d1282;
+  background-color:white;
   height: 50px;
+  border: 1px solid black;
+  box-shadow: 0 2px 4px #0d1282;
+
 
   .left {
     margin: 3px;
-    color: white;
+    color: #0d1282;
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+    h2:hover{
+    cursor: pointer;
+    }
   }
 
   .center {
-    color: white;
+    color: #0d1282;
     float: right;
     display: flex;
     align-items: center;
@@ -46,8 +54,8 @@
     }
     ul li:hover {
       cursor: pointer;
-      background-color: antiquewhite;
-      color: #0d1282;
+      background-color: #0d1282;
+      color: #ffffff;
       border-radius: 5px;
     }
   }
@@ -60,6 +68,9 @@
 
       width: 50px;
       height: 50px;
+    }
+    img:hover{
+      cursor: pointer;
     }
   }
 }
