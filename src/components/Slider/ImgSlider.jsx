@@ -1,18 +1,5 @@
-// import React from "react";
-
-// function ImgSlider() {
-//     return (
-//         <div>
-//   <h1>Slider</h1>
-//         </div>
-
-//     );
-// }
-
-// export default ImgSlider;
-
 import React, { useState } from "react";
-import "./ImgSlider.css"; 
+import "./ImgSlider.css";
 
 const ImgSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

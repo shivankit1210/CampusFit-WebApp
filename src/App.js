@@ -13,6 +13,7 @@ function App() {
     <div>
       <Navbar />
       <ImgSlider images={images} />
+      <Content/>
     </div>
   );
 }
