@@ -4,7 +4,7 @@ import membership from "../../images/membership.jpg";
 
 const Membership = () => {
   return (
-    <div className="membership">
+    <div id="membership" className="membership">
       <div className="left">
         <h1>MEMBERSHIP</h1>
         <p>
@@ -17,6 +17,7 @@ const Membership = () => {
           your health and well-being. Sign up now and start your fitness journey
           with us!"
         </p>
+        <button className="btn">know more</button>
       </div>
       <div className="right">
         <img src={membership} alt="" />

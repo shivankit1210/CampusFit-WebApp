@@ -10,8 +10,7 @@ function Navbar() {
       </div>
       <div className="center">
         <ul>
-          <li>HOME</li>
-          <li>MEMBERSHIP</li>
+          <li><a href="#membership">MEMBERSHIP</a></li>
           <li>ENQUIRE</li>
           <li>EQUIPMENTS</li>
           <li>EXERCISES</li>
