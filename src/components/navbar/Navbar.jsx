@@ -11,7 +11,7 @@ function Navbar() {
       <div className="center">
         <ul>
           <li><a href="#membership">MEMBERSHIP</a></li>
-          <li>ENQUIRE</li>
+          <li><a href="#enquire">ENQUIRE</a></li>
           <li>EQUIPMENTS</li>
           <li>EXERCISES</li>
         </ul>

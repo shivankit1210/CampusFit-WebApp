@@ -5,10 +5,14 @@ import Content from "./components/content/Content";
 import Footer from "./components/footer/Footer";
 import Membership from "./components/membership/Membership";
 import banner from "./images/banner.png";
+import Enquiry from "./components/enquiry/Enquiry";
   const images = [
-    url(banner),
-    url(banner),
-    url(banner)
+    banner,
+    banner,
+    banner
+    // 'url(${banner})',
+    // 'url(${banner})',
+    // 'url(${banner})'
     // Add more image URLs as needed
   ];
 
@@ -19,6 +23,7 @@ function App() {
       <ImgSlider images={images} />
       <Content/>
       <Membership/>
+      <Enquiry/>
       <Footer/>
       
     </div>
