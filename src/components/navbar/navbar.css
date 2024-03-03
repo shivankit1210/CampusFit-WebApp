@@ -69,7 +69,9 @@
   }
 
   .right{
-   
+   display: flex;
+   align-items: center;
+
    
 
     img{
@@ -79,6 +81,14 @@
     }
     img:hover{
       cursor: pointer;
+    }
+    .btn{
+     margin: 0px 5px 0px 0px; 
+     padding: opx 5px 0px 0px;
+     background-color: #0d1282;
+     color: white;
+     cursor: pointer;
+     width: 10vh;
     }
   }
 }

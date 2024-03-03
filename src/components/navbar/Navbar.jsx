@@ -17,6 +17,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="right">
+        <button className="btn">Login</button>
         <img src={itg} alt="" />
       </div>
     </div>
