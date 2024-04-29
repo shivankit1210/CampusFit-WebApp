@@ -1,8 +1,11 @@
+import "./equipments.css";
 const Equipments = ()=>{
     return (
-        <>
-        <h1>EQuipments here</h1>
-        </>
+        <div className="equipments">
+            <table>
+                tr
+            </table>
+        </div>
     )
 }
 

@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import Membership from "./components/membership/Membership";
 import banner from "./images/banner.png";
 import Enquiry from "./components/enquiry/Enquiry";
+import Equipments from "./components/Equipments/Equipments";
   const images = [
     banner,
     banner,
@@ -24,6 +25,7 @@ function App() {
       <Content/>
       <Membership/>
       <Enquiry/>
+      <Equipments/>
       <Footer/>
       
     </div>
