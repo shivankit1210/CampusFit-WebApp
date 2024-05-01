@@ -1,5 +1,6 @@
 import {app} from "../../firebase";
 import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";
+import { Link } from "react-router-dom";
 import React from "react";
 import itg from "../../images/itg.jpg";
 import "./navbar.css";
@@ -15,6 +16,9 @@ function Navbar() {
   ).then((value)=> console.log(value));
 };
 
+
+
+
   return (
     <div className="navbar">
       <div className="left">
@@ -29,6 +33,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="right">
+        <Link to="/login"><button className="btn">Login</button></Link>
         <button className="btn" onClick={CreateUser}>Login</button>
         <img src={itg} alt="" />
       </div>
