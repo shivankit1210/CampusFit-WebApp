@@ -7,8 +7,6 @@ import Membership from "./components/membership/Membership";
 import banner from "./images/banner.png";
 import Enquiry from "./components/enquiry/Enquiry";
 import Equipments from "./components/Equipments/Equipments";
-import Login from "./Pages/Login/Login";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const images = [
   banner,
@@ -21,14 +19,12 @@ const images = [
 ];
 
 function App() {
-  const router = createBrowserRouter([{ path: "/login", element:<><Navbar /> <Login /></>  }]);
   return (
     <div>
-      <Navbar />
-      <RouterProvider router={router} />
+      <Navbar/>
       <ImgSlider images={images} />
       <Content />
-       <Membership />
+      <Membership />
       <Enquiry />
       <Equipments />
       <Footer />
