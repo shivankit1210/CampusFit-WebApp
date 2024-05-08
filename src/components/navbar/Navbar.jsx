@@ -3,7 +3,7 @@ import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 import React from "react";
 import itg from "../../images/itg.jpg";
 import "./navbar.css";
-import Login from "../../Pages/login/Login";
+import Login from "../../Pages/Signin/Login";
 
 const auth = getAuth(app);
 

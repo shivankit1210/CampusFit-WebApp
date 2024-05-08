@@ -1,20 +1,23 @@
 import React from "react";
+import { useState } from "react";
 
-import {app} from "../../firebase";
-import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";
+import { app } from "../../firebase";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
+const auth = getAuth(app);
 
 const Login = () => {
 
-  const auth = getAuth(app);
- let email = document.getElementById("Email")
- let password = document.getElementById("Password")
+    const  [email, setEmail] = useState("");
+    const  [password, setPassword] = useState("");
+  
+  
 
-  const CreateUser = ()=>{
-    createUserWithEmailAndPassword(auth,email,password)
-    .then((value)=> console.log(value));
-   };
-
-   CreateUser(email,password);
+  const createUser = ()=>{
+    createUserWithEmailAndPassword(auth,email,password).then((value)=>
+    alert("Success")
+);
+  };
 
   return (
     <div>
@@ -46,9 +49,19 @@ const Login = () => {
             less than a minute
           </p>
           <div class="inputs">
-            <input type="email" id="Email" placeholder="Email" />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+            />
             <br />
-            <input type="password" id="Password" placeholder="password" />
+            <input
+              type="password"
+              placeholder="Enter your password"
+              onChange={(e) => setpassword(e.target.value)}
+              value={password}
+            />
           </div>
 
           <br />
@@ -63,7 +76,7 @@ const Login = () => {
           </div>
 
           <br />
-          <button onClick={CreateUser} >Login</button>
+          <button onClick={createUser} >Login</button>
         </div>
       </div>
     </div>
