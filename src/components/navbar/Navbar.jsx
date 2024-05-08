@@ -1,23 +1,10 @@
-import {app} from "../../firebase";
-import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 import React from "react";
 import itg from "../../images/itg.jpg";
+import { Link } from "react-router-dom";
 import "./navbar.css";
-import Login from "../../Pages/Signin/Login";
 
-const auth = getAuth(app);
 
 function Navbar() {
-
-//   const CreateUser = ()=>{
-//  createUserWithEmailAndPassword(auth,
-//   "shivankit1210@gmail.com",
-//   "Slka1210"
-//   ).then((value)=> console.log(value));
-// };
-
-
-
 
   return (
     <div className="navbar">
@@ -33,8 +20,14 @@ function Navbar() {
         </ul>
       </div>
       <div className="right">
-        <a href="/Login">Login</a>
-        {/* <button className="btn" onClick={CreateUser}>Login</button> */}
+       <ul>
+        <li>
+          <Link to ='/signin'>Sign In</Link>
+        </li>
+        <li>
+        <Link to ='/signup'>Sign Up</Link>
+        </li>
+       </ul>
         <img src={itg} alt="" />
       </div>
     </div>

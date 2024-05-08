@@ -1,36 +1,43 @@
 import React from "react";
-import { app } from "../../firebase";
+import { app } from "../firebase";
 import { useState } from "react";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 const auth = getAuth(app);
 
-const [email, setEmail] = useState("");
-const [password, setPassword] = useState("");
-
-const createUser = () => {
-  createUserWithEmailAndPassword(auth, email, password).then();
-};
-
 const Signup = () => {
-  <div className="signup">
-    <input
-      type="email"
-      placeholder="Enter email"
-      onChange={(e) => setEmail(e.target.value)}
-      value={email}
-    />
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-    <input
-      type="password"
-      placeholder="Enter password"
-      onChange={(e) => setPassword(e.target.value)}
-      value={password}
-    />
+  const createUser = () => {
+    createUserWithEmailAndPassword(auth, email, password).then((value) =>
+      alert("Success")
+    );
+  };
+  return (
+    <div>
+      <h1>SIGNUP PAGE</h1>
+      <h2>SIGNUP PAGE</h2>
+      
+      <div className="signup" style={{ color: "red" }}>
+        <input
+          type="email"
+          placeholder="Enter email"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
+        />
 
-    <button onClick={createUser} >Create Account</button>
+        <input
+          type="password"
+          placeholder="Enter password"
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
+        />
 
-  </div>;
+        <button onClick={createUser}>Create Account</button>
+      </div>
+    </div>
+  );
 };
 
 export default Signup;
