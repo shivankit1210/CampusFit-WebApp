@@ -16,8 +16,8 @@ const Signup = () => {
   };
   return (
     <div>
+      <br />
       <h1>SIGNUP PAGE</h1>
-      <h2>SIGNUP PAGE</h2>
       
       <div className="signup" style={{ color: "red" }}>
         <input
